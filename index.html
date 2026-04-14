@@ -77,7 +77,9 @@ const supabase = createClient(supabaseUrl, supabaseKey);
         let tipp = data[i]; 
         text += 
           tipp.name + ": " + 
+            tipp.teamA + ":" +
           tipp.tore_a + " : " + tipp.tore_b + 
+            tipp.teamB + " : " +
           "<br>"; 
 } 
 document.getElementById("ausgabe").innerHTML = text; 
